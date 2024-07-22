@@ -13,7 +13,7 @@
 
   - name: create user
     ansible.builtin.command: useradd expense
-    when: USER.RC != 0 #condition
+    when: USER.rc != 0 #condition
 
   - name: say Hello
     ansible.builtin.debug:
